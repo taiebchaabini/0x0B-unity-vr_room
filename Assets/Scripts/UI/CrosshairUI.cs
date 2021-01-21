@@ -17,10 +17,11 @@ public class CrosshairUI : MonoBehaviour
     private Vector3 endPoint;
     private LineRenderer lineRenderer = null;
 
-    private void Awake()
+
+    private void Start()
     {
         lineRenderer = GetComponent<LineRenderer>();
-
+        UpdateLength();
     }
 
     private void Update()

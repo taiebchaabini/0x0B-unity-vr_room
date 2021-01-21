@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class VRInteraction : MonoBehaviour
 {
@@ -9,11 +10,8 @@ public class VRInteraction : MonoBehaviour
     {
         if (gameObject.name == "glass_panel_1_door")
         {
-            if (!transform.parent.GetComponent<Animator>().GetBool("character_nearby"))
-                transform.parent.GetComponent<Animator>().SetBool("character_nearby", true);
-            else
-                transform.parent.GetComponent<Animator>().SetBool("character_nearby", false);
-            
+            transform.parent.GetComponent<Animator>().SetBool("character_nearby", true);
+            transform.parent.GetComponent<NavMeshObstacle>().enabled = false;
         }
     }
 }

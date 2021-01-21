@@ -8626,7 +8626,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b5580e9c6a36d44db162b72aef530b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scriptName: door
 --- !u!4 &1061545835
 Transform:
   m_ObjectHideFlags: 0
@@ -14429,6 +14428,14 @@ PrefabInstance:
     - target: {fileID: 417258, guid: ac7a01ca06ca9044eb15b32cb7a936f8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2341864, guid: ac7a01ca06ca9044eb15b32cb7a936f8, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6580822, guid: ac7a01ca06ca9044eb15b32cb7a936f8, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac7a01ca06ca9044eb15b32cb7a936f8, type: 3}
