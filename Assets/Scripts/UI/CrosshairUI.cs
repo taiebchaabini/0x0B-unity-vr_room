@@ -9,23 +9,37 @@ public class CrosshairUI : MonoBehaviour
     public float laserLength = 3.0f;
     // Crosshair Gameobject
     public GameObject crosshair;
-    private int ignoreLayer = 2;
-    private Vector3 endPoint;
+    // Laser color
+    public Material normal;
+    // Laser hover color
+    public Material hover;
     
-
+    private Vector3 endPoint;
     private LineRenderer lineRenderer = null;
 
     private void Awake()
     {
-        lineRenderer = GetComponent<LineRenderer>();   
+        lineRenderer = GetComponent<LineRenderer>();
+
     }
 
     private void Update()
     {
+        CheckTeleportLaser();
         UpdateLength();
-        UpdatePosition();
+        //UpdatePosition();
     }
 
+    // Disables the Laser when teleport laser shows up.
+    private void CheckTeleportLaser()
+    {
+        if (OVRInput.Get(OVRInput.Touch.One))
+            lineRenderer.enabled = false;
+        else
+            lineRenderer.enabled = true;
+    }
+
+    // Update cursor length
     private void UpdateLength()
     {
         endPoint = GetEnd();
@@ -34,11 +48,13 @@ public class CrosshairUI : MonoBehaviour
         lineRenderer.SetPosition(1, endPoint);
     }
 
+    // Update the position of the crosshair according to laser position.
     private void UpdatePosition()
     {
         crosshair.transform.position = endPoint;
     }
 
+    // Updates end position of the laser
     private Vector3 GetEnd()
     {
         RaycastHit hit = RayCast();
@@ -46,22 +62,32 @@ public class CrosshairUI : MonoBehaviour
 
         if (hit.collider)
         {
-            Debug.Log(hit.collider.name);
+            if (hit.collider.gameObject.layer == 10)
+            {
+                lineRenderer.material = hover;
+                if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger))
+                    hit.collider.gameObject.GetComponent<VRInteraction>().Interact();
+            }
+            else
+                lineRenderer.material = normal;
+    
             endPos = hit.point;
         }
 
         return endPos;
     }
 
+    // Raycast used to detect collision
     private RaycastHit RayCast()
     {
         RaycastHit hit;
         Ray ray = new Ray(transform.position, transform.forward);
 
-        Physics.Raycast(ray, out hit, laserLength, ignoreLayer);
+        Physics.Raycast(ray, out hit, laserLength);
 
         return hit;
     }
+
 
     private Vector3 DefaultEnd(float length)
     {
