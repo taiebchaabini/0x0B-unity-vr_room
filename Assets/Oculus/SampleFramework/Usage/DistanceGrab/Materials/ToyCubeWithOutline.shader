@@ -6,7 +6,7 @@ Shader "Custom/ToyCubeOutline"
 		_Color("Color", Color) = (1,1,1,1)
 		_MainTex("Albedo", 2D) = "white" {}
 		[PerRendererData] _OutlineColor ("Outline Color", Color) = (0,0,0,1)
-		_OutlineWidth ("Outline width", Range (.002, 0.03)) = .005
+		_OutlineWidth ("Outline width", Range (.002, 0.03)) = .01
 		
 		[HideInInspector] _Mode ("__mode", Float) = 0.0
 		[HideInInspector] _SrcBlend ("__src", Float) = 1.0
@@ -72,16 +72,20 @@ Shader "Custom/ToyCubeOutline"
 			CGPROGRAM
 			#pragma vertex vert
 			#pragma fragment frag
+			sampler2D _MainTex;
 			fixed4 frag(v2f i) : SV_Target
 			{
 				// Just draw the _OutlineColor from the vert pass above.
-				return i.color;
+				fixed4 col = tex2D(_MainTex, i.color) + _OutlineColor;
+                col.a = 0.25;
+				return col;
 			}
 			ENDCG
 		}
 		// Standard forward render.
 		UsePass "Standard/FORWARD"
 	}
+	
 	
 	Fallback Off
 }
