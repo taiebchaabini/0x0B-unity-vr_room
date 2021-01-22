@@ -13,5 +13,6 @@ public class VRInteraction : MonoBehaviour
             transform.parent.GetComponent<Animator>().SetBool("character_nearby", true);
             transform.parent.GetComponent<NavMeshObstacle>().enabled = false;
         }
+        Debug.Log(gameObject.name);
     }
 }

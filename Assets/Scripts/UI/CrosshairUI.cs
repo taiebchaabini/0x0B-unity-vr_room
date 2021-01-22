@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class CrosshairUI : MonoBehaviour
@@ -34,7 +35,7 @@ public class CrosshairUI : MonoBehaviour
     // Disables the Laser when teleport laser shows up.
     private void CheckTeleportLaser()
     {
-        if (OVRInput.Get(OVRInput.Touch.One))
+        if (OVRInput.Get(OVRInput.Touch.Two))
             lineRenderer.enabled = false;
         else
             lineRenderer.enabled = true;
