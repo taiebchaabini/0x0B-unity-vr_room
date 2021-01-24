@@ -3886,6 +3886,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ChessBoard
       objectReference: {fileID: 0}
+    - target: {fileID: 1597915674465970, guid: 054509b01eba36f4bb4feefc1357aba5, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1603907031073628, guid: 054509b01eba36f4bb4feefc1357aba5, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -8885,7 +8889,7 @@ GameObject:
   - component: {fileID: 882373620}
   - component: {fileID: 882373619}
   - component: {fileID: 882373622}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}

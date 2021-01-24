@@ -36,6 +36,7 @@ public class Console : MonoBehaviour
     // Add number to the inputCodeField
     public void addNumber(string nb)
     {
+        Debug.Log("Hello this is adding number");
         if (inputCodeTMP.text.Length != 4)
             inputCodeTMP.text += nb;
     }
