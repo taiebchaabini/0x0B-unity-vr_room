@@ -3024,7 +3024,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b5580e9c6a36d44db162b72aef530b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactions: 0
 --- !u!1 &269374883
 GameObject:
   m_ObjectHideFlags: 0
@@ -5856,7 +5855,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b5580e9c6a36d44db162b72aef530b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactions: 0
 --- !u!1001 &504565274
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10369,7 +10367,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b5580e9c6a36d44db162b72aef530b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactions: 0
 --- !u!1001 &972878878
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10587,7 +10584,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   keys:
   - {fileID: 1340631319}
-  - {fileID: 1911356694}
+  - {fileID: 1911356693}
   - {fileID: 1829891263}
   - {fileID: 1415807838}
   codeInputField: {fileID: 59264170}
@@ -11460,7 +11457,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b5580e9c6a36d44db162b72aef530b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactions: 0
 --- !u!1 &1060434858
 GameObject:
   m_ObjectHideFlags: 0
@@ -13381,7 +13377,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b5580e9c6a36d44db162b72aef530b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactions: 0
 --- !u!1001 &1153371272
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15405,8 +15400,8 @@ GameObject:
   - component: {fileID: 1340631321}
   - component: {fileID: 1340631320}
   - component: {fileID: 1340631319}
-  - component: {fileID: 1340631318}
   - component: {fileID: 1340631323}
+  - component: {fileID: 1340631318}
   m_Layer: 8
   m_Name: Paper
   m_TagString: Untagged
@@ -15438,12 +15433,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1340631316}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75521198996f88f4cadb71d70ce85d40, type: 3}
+  m_Script: {fileID: 11500000, guid: 7d1a7708e76601b4ea829921c33bc624, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textFile: {fileID: 4900000, guid: 172ab7e8eea4a694a88a42beffe6a45d, type: 3}
-  wordCode: 0
-  word: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
+  m_materialColorField: _OutlineColor
 --- !u!114 &1340631319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20507,7 +20505,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b5580e9c6a36d44db162b72aef530b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactions: 0
 --- !u!1 &1698706591
 GameObject:
   m_ObjectHideFlags: 0
@@ -22678,9 +22675,9 @@ GameObject:
   - component: {fileID: 1911356697}
   - component: {fileID: 1911356696}
   - component: {fileID: 1911356695}
-  - component: {fileID: 1911356694}
   - component: {fileID: 1911356693}
   - component: {fileID: 1911356692}
+  - component: {fileID: 1911356694}
   m_Layer: 8
   m_Name: PaperWall
   m_TagString: Untagged
@@ -22743,12 +22740,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1911356690}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75521198996f88f4cadb71d70ce85d40, type: 3}
+  m_Script: {fileID: 11500000, guid: 7d1a7708e76601b4ea829921c33bc624, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textFile: {fileID: 4900000, guid: 172ab7e8eea4a694a88a42beffe6a45d, type: 3}
-  wordCode: 3
-  word: IT
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
+  m_materialColorField: _OutlineColor
 --- !u!65 &1911356695
 BoxCollider:
   m_ObjectHideFlags: 0

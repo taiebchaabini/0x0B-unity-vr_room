@@ -9,7 +9,7 @@ public class VRInteraction : MonoBehaviour
     private bool doorAccess;
     private GameObject DistanceGrabHandRight;
     private GameObject item;
-    public int interactions;
+    private int interactions;
 
     public void Start()
     {
