@@ -67,7 +67,7 @@ public class CrosshairUI : MonoBehaviour
             if (hit.collider.gameObject.layer == 10)
             {
                 lineRenderer.material = hover;
-                if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger))
+                if (OVRInput.GetDown(OVRInput.RawButton.RIndexTrigger))
                     hit.collider.gameObject.GetComponent<VRInteraction>().Interact();
             }
             else
