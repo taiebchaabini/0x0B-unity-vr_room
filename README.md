@@ -1,4 +1,13 @@
 # VR ROOM
+
+TODO LIST:
+- [x] First Protoype
+- [ ] Improving grab
+- [ ] Aesthetic improvement on the grab
+- [ ] Adding outline to grabbable items
+- [ ] Adding Quest list to UI
+- [ ] Randomize events and quest lit on a new game
+
 [![Watch the demo on youtube](https://github.com/taiebchaabini/0x0B-unity-vr_room/blob/main/Assets/VR%20ROOM/yt_demo.png?raw=true)](https://www.youtube.com/watch?v=1_hYwA1Lf7A)
 
 Background music: 
