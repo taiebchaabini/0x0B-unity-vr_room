@@ -1,6 +1,6 @@
 # VR ROOM
 
-<iframe width="987" height="480" src="https://www.youtube.com/embed/1_hYwA1Lf7A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![Watch the demo on youtube](https://www.youtube.com/watch?v=1_hYwA1Lf7A)
 
 
 <p align="left">
