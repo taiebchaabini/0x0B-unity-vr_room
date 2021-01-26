@@ -10,7 +10,7 @@
 - [ ] Adding Quest list to UI
 - [ ] Randomize events and quest list on a new game
 
-## Credits:
+## CREDITS:
 Background music: 
 - Bio Unit - Disquiet: https://freemusicarchive.org/music/Bio_Unit
 
