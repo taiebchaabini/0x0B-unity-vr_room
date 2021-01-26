@@ -1,4 +1,4 @@
-using System.Collections;
+     using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -29,7 +29,10 @@ public class VRInteraction : MonoBehaviour
         else if (gameObject.name == "Projector")
         {
             if (interactions >= 4)
+            {
                 gameObject.transform.GetChild(0).gameObject.SetActive(true);
+                Destroy(GameObject.Find("escape_panel"));
+            }
         }
         else if (doorAccess && transform.parent.parent.parent.name == "ChessBoard")
         {
