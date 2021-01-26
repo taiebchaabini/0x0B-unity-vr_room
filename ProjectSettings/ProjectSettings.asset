@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: HolbertonSchool
-  productName: 0x0B-unity-vr_room
+  productName: VRroom
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -128,7 +128,9 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleVersion: 0.1
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: 11400000, guid: 3a93806c1498a0c43b74383e49a48a46, type: 2}
+  - {fileID: -1392350602103054301, guid: 034f5cd1feea5284491ea3fadc9cea82, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -146,7 +148,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.HolbertonSchool.vr_room
+    Android: taiebchaabin.VRroom.PROJECT
     Standalone: com.HolbertonSchool.unity-vrroom
   buildNumber:
     Standalone: 0

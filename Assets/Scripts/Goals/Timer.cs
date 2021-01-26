@@ -6,13 +6,17 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
+    private float defaultTime;
     private float timer;
     private string remainingTime;
+    private AudioSource halfTime;
     
     // Start is called before the first frame update
     void Start()
     {
-        timer = 60 * 25;
+        defaultTime = 60 * 25;
+        timer = defaultTime;
+        halfTime = GameObject.Find("HalfTime").GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -27,13 +31,15 @@ public class Timer : MonoBehaviour
         else
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         
-        if (timer < 60 * 10)
+        if (timer <= defaultTime / 2)
         {
             this.GetComponent<TMP_Text>().color = new Color(0.9333333f, 0.454902f, 0.145098f);
+            halfTime.Play();
         }
-        else if (timer < 60 * 5)
+        else if (timer <= defaultTime / 3)
         {
             this.GetComponent<TMP_Text>().color = Color.red;
+            halfTime.Play();
         }
 
     
