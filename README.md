@@ -1,6 +1,6 @@
 # VR ROOM
 
-TODO LIST:
+## TODO LIST:
 - [x] First Protoype
 - [ ] Improving grab
 - [ ] Aesthetic improvement on the grab
