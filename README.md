@@ -3,7 +3,7 @@
 ## TODO LIST:
 - [x] First Protoype
 - [ ] Improving grab
-- [ ] Aesthetic improvement on the grab
+- [ ] Aesthetic improvement when grabbing an item
 - [ ] Adding outline to grabbable items
 - [ ] Adding Quest list to UI
 - [ ] Randomize events and quest lit on a new game
