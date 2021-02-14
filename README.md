@@ -1,5 +1,8 @@
 # VR ROOM
 
+## Status
+Todo list in progress
+
 [![Watch the demo on youtube](https://github.com/taiebchaabini/0x0B-unity-vr_room/blob/main/Assets/VR%20ROOM/yt_demo.png?raw=true)](https://www.youtube.com/watch?v=1_hYwA1Lf7A)
 
 ## TODO LIST:
