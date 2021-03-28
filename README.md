@@ -1,7 +1,7 @@
 # VR ROOM
 
 ## Description
-Escape room where the player should discover clues, solve puzzles, and accomplish tasks in two rooms in order to progress and escape in a limited amount of time.
+Escape room where the player should discover clues, solve puzzles, and accomplish tasks in two rooms in order to progress and escape in 25 minutes.
 
 ## Status
 Todo list in progress
